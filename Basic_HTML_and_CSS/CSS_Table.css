@@ -1,0 +1,25 @@
+h1 {
+	color: Black;
+	text-align: center;
+	
+}
+
+
+table {
+	border: 1px solid silver;
+}
+
+td:hover {
+	background-color: DarkSalmon;
+	color: black;
+}
+
+tr, th {
+	background-color: brown;
+	color: cornsilk;
+}
+
+tr, td {
+	background-color: BurlyWood;
+	color: white;
+}
