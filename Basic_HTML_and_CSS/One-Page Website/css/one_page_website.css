@@ -1,0 +1,11 @@
+body {
+    font-family: Helvetica, 'Times New Roman', Times, serif;
+    font-size: small;
+}
+
+input {
+    width: 200px;
+    margin: 0% auto;
+    border: 4px dotted red;
+    border-radius: 6px;
+}
