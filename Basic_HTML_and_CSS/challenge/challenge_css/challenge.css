@@ -1,0 +1,155 @@
+body {
+    padding-top: 50px;
+}
+
+.container {
+    padding-top: 5em;
+    position: relative;
+   
+
+  }
+
+.goat-name {
+    padding-top: 5em;
+    z-index: 100%;
+    color: orange;
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 30px;
+    width: 100%
+  }
+  
+
+.image {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    filter: grayscale(50%);
+    border-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: cadetblue;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%, -50%);
+    -ms-transform: translateY(-50%, -50%);
+    transform: translateY(50%, 50%);
+    text-align: center;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color:lightcoral;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: turquoise;
+    color: black;
+}
+
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 1px solid black;
+    
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.top-row {
+    background-color: lightcoral;
+}
+
+
+.column{
+    color: dodgerblue;
+    float: left;
+    width: 50%;
+    height: auto;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+#column-1 {
+    background-color: grey;
+}
+
+#column-2 {
+    background-color: lightslategrey;
+}
+
+.p-element:hover {
+    background-color: black;
+    color: limegreen;
+    
+}
+
+.video-container {
+    position: relative;
+}
+
+#video {
+    position: relative;
+    z-index: 0;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.video-overlay p {
+    color: coral;
+    font-weight: bold;
+}
