@@ -11,3 +11,9 @@ function cFunction() {  //this function concatenates the variable sentence with 
     sentence += " into a brand new sentence.";
     document.getElementById("concatenate").innerHTML = sentence;
 }
+
+function mixColors() {
+
+var colorButton = document.getElementById("mix").style.backgroundColor = "purple";
+
+}
