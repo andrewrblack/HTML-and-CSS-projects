@@ -15,3 +15,8 @@ document.write(sum) // the variable "sum" is multiplying the variables x and y
 var color = "color variable";
 var color = color.fontcolor("red");
 document.write(color);
+
+
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
