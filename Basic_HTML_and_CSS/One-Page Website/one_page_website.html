@@ -1,20 +1,21 @@
 <!DOCTYPE>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 		<title>CANDY CITY</title>
-		<link rel="stylesheet" href="./css/one_page_website.css">
+        <link rel="stylesheet" href="./css/one_page_website.css">
+        <script src="./JS/one_page_website.js" defer></script>
 	</head>	
 		<!-- NAV -->
 	<body>
 		
 		<nav>
-			<div>
+			<div class="text">
 				<div>
 					<ul>
-						<a href="#home" id="link"><li>HOME</li></a>
-						<a href="#candypics" id="link"><li>LOOK AT CANDY</li></a>
-						<a href="#freecandy" id="link"><li>GET FREE CANDY</li></a>
+						<a href="#home" id="link"><li>HOME</li></a><br>
+						<a href="#candypics" id="link"><li>LOOK AT CANDY</li></a><br>
+						<a href="#freecandy" id="link"><li>GET FREE CANDY</li></a><br>
 					</ul>
 				</div>
 			</div>
@@ -22,7 +23,7 @@
 		<!-- END NAV-->
 		
 		<!-- HOME -->
-		<div id="home">
+		<div class="text" id="home">
 			<div>
 				<div>
 					<span><h1>WELCOME TO CANDY CITY<h1></span>
@@ -38,45 +39,70 @@
 		
 		<!-- Candy pics-->
 		<section>
-			<div id="candypics">
+			<div class="text" id="candypics">
 				<h2>LOOK AT CANDY</h2>
 			</div>
 				
-				<!--pic1-->
-				<div>
-					<div>
-						<div>
-							<h3>CAKE POPS</h3>
-						</div>
-						<img src="./candyimages/thumb/candy_1.png" alt="cake pops" width="386" height="260">
-					</div>
-				</div>
-				<!--end pic 1 -->
-				
-				<!--pic2 -->
-				<div>
-					<div>
-						<div>
-							<h3>SKITTLES</h3>
-						</div>
-						<img src="./candyimages/thumb/candy_2.png" alt="skittles" width="386" height="260">
-					</div>
-				</div>
-				<!--end pic 2-->
-				
-				<!--pic3-->
-				<div>
-					<div>
-						<div>
-							<h3>SPRINKLES</h3>
-						</div>
-						<img src="./candyimages/thumb/candy_3.png" alt="sprinkles" width="386" height="260">
-					</div>
-				</div>
-				<!--end pic 3-->
-				
+				<!--images for lightbox-->
+            <div class="centerImages">
+
+                <div class="row">
+                  <div class="column">
+                    <img src="./candyimages/thumb/candy_1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="./candyimages/thumb/candy_2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="./candyimages/thumb/candy_3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                  </div>
+                </div>
+                
+            </div>    
+
+
+                <div id="myModal" class="modal">
+                  <span class="close cursor" onclick="closeModal()">&times;</span>
+                  <div class="modal-content">
+                
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="./candyimages/thumb/candy_1.png" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="./candyimages/thumb/candy_2.png" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="./candyimages/thumb/candy_3.png" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                    <div class="caption-container">
+                      <p id="caption"></p>
+                    </div>
+                
+                
+                    <div class="column">
+                      <img class="demo cursor" src="./candyimages/thumb/candy_1.png" style="width:100%" onclick="currentSlide(1)" alt="cake pops">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="./candyimages/thumb/candy_2.png" style="width:100%" onclick="currentSlide(2)" alt="sprinkles">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="./candyimages/thumb/candy_3.png" style="width:100%" onclick="currentSlide(3)" alt="skittles">
+                    </div>
+                  </div>
+                </div>
+                
+
 				<!--video-->
-				<div>
+				<div class="text">
 					<div>
 						<div>
 							<h3>HOW CANDY IS MADE</h3>
@@ -90,7 +116,7 @@
 		
 		<section>
 			<div id="freecandy">
-				<div>
+				<div class="text">
 					<h2>WOULD YOU LIKE FREE CANDY?</h2>
 					<div>
 			
@@ -116,7 +142,7 @@
 		</section>
 		
 		<footer>
-			<div>
+			<div class="text">
 				Candycity.com &nbsp;|&nbsp; &copy; 2021 |&nbsp <a href="https://en.wikipedia.org/wiki/Candy" target="new"><em>For more information on candy click here<em></a>
 			</div>
 		</footer>
