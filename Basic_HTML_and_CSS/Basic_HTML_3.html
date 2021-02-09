@@ -2,18 +2,66 @@
 <html lang="en">
 	<head>
 		<title></title>
-		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="Basic_CSS_1.css">
+		<script src="./java_3.js"></script>
 	</head>
 	<body>
+
+		<!--adds the fade to webpage-->
+		<script>
+			document.body.className = 'fade';
+			
+			document.addEventListener("DOMContentLoaded", () => {
+				window.setTimeout(function() {
+					document.body.className = '';
+				}, 230);
+			});
+		</script>
+		
 	
 	<h1>This header was styled by CSS</h1>
 	
 	
-	<div style="color: blue">
-		<p>This is a paragraph styled inside a div</p>
-	</div>
 	
-		
+	
+	<h2>Give us your contact info here:</h2>
+	<form id="form" action="">
+		<label for="fname">First and Last Name:</label><br>
+		<input type="text" id="fname" name="fname" placeholder="Sally Davidson"><br>
+		<label for="phoneNum">Phone Number</label><br>
+		<input type="text" id="phoneNum" name="phoneNum" placeholder="(xxx)xxx-xxxx"><br>
+		<input type="submit" value="Submit" onclick="validateForm()">
+	</form>
+
+	<!-- here is the keyframes rule-->
+	<div id="floatingBox">This is a floating box, it floats using the keyframes rule</div>
+
+
+
+
+
+
+
+
+	<!--Pop up form-->
+	<button class="open-button" onclick="openForm()">Want to tell us more?</button>
+
+	<div class="form-popup" id="myForm">
+	  <form action="/action_page.php" class="form-container">
+		<h1>Log in to your account first!</h1>
+	
+		<label for="email"><b>Email</b></label>
+		<input type="text" placeholder="Enter Email" name="email" required>
+	
+		<label for="psw"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="psw" required>
+	
+		<button type="submit" class="btn">Login</button>
+		<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+	  </form>
+	</div>
+
+	
 	</body>
 </html>

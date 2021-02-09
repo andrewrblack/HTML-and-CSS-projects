@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            //creates a text string
+            var music = "<music>" +
+            "<artist>Radiohead</artist>" +
+            "<album>Kid A</album>" +
+            "<song>Idioteque</song>" +
+            "<year>2000</year>" +
+            "</music>";
+
+            //creates an xml dom parser
+            XML_Parser = new DOMParser();
+
+            //creates a new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(music, "text/xml");
+
+            document.getElementById("XML_Example").innerHTML = 
+            XML_Document.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
+
+
+
+
+        </script>
+
+
+
+    </body>
+</html>

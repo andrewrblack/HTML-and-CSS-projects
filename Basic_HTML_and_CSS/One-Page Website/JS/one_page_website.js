@@ -38,3 +38,5 @@ function openModal() { // Open the Modal
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
+
+  
